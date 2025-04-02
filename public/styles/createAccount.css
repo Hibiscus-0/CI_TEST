@@ -1,0 +1,305 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+}
+
+.main-container {
+  display: flex;
+  height: 100%;
+  background: #1e2054;
+}
+
+.left-container {
+  flex: 1;
+  background: #1e2054;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.right-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  border-top-left-radius: 3rem;
+  border-bottom-left-radius: 3rem;
+  background-color: #faf7ee;
+  padding: 0.5rem;
+  overflow-y: auto;
+}
+
+/* Left Container Styles */
+.branding {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 80%;
+}
+
+.logo {
+  width: 340px;
+  height: auto;
+  margin-bottom: 5px;
+}
+
+.brand-tagline {
+  font-size: 1.25rem;
+  font-weight: 700;
+  opacity: 1;
+  color: #fb9ebb;
+  padding-right: 50px;
+  text-align: center;
+}
+
+/* Right Side */
+.registration-form {
+  width: 100%;
+}
+form {
+  padding: 50px;
+}
+
+/* Form Header */
+.form-title {
+  font-size: 42px;
+  font-weight: 900;
+  color: #1e2054;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.form-subtitle {
+  font-size: 14px;
+  color: #1e2054;
+  text-align: center;
+  font-weight: 700;
+}
+
+.form-section-title {
+  font-size: 20px;
+  font-weight: 800;
+  color: #1e2054;
+  margin-top: 10px;
+}
+
+.row {
+  width: 100%;
+}
+
+option {
+  background-color: #fff5f2;
+}
+
+label {
+  font-size: 12px;
+  color: #1e2054;
+  font-weight: 700;
+}
+
+.input-group {
+  display: flex;
+  gap: 10px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #fcdcd2;
+  border-radius: 10px;
+  background-color: #fcdcd2;
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+input::placeholder {
+  color: #666;
+}
+
+input:focus,
+select:focus {
+  border-color: #ff6f91;
+  background-color: #ffe5dd;
+}
+
+/* Submit Button */
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #1e2054;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 20px;
+}
+
+.submit-btn:hover {
+  background-color: #302e61;
+}
+
+/* Login Text */
+.login-text {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 15px;
+  font-weight: 700;
+}
+
+.login-text a {
+  font-weight: 700;
+  color: #1e2054;
+  text-decoration: none;
+}
+
+.login-text a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+}
+
+.divider-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.divider {
+  flex: 1;
+  height: 1px;
+  background-color: #ccc;
+  border: none;
+}
+
+.or {
+  margin: 0 10px;
+  font-weight: bold;
+  color: #333;
+  font-size: 12px;
+}
+
+.google-login {
+  width: 100%;
+  padding: 10px;
+  background-color: white;
+  border: 2px solid #e5e5e5;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.google-login img {
+  width: 20px;
+}
+
+.google-login:hover {
+  border-color: #ff6f91;
+}
+
+@media (max-width: 1024px) {
+  .main-container {
+    flex-direction: column;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .left-container,
+  .right-container {
+    flex: none;
+    width: 100%;
+    border-radius: 0;
+    padding: 1.5rem;
+  }
+
+  .left-container {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+  }
+
+  .right-container {
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    padding: 1.5rem;
+  }
+
+  .branding {
+    max-width: 90%;
+  }
+
+  .logo {
+    width: 280px;
+  }
+
+  .brand-tagline {
+    padding-right: 0;
+  }
+
+  form {
+    padding: 30px;
+  }
+
+  .form-title {
+    font-size: 36px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .left-container {
+    padding: 1.5rem 1rem;
+  }
+
+  .right-container {
+    padding: 1rem;
+  }
+
+  .logo {
+    width: 220px;
+  }
+
+  .brand-tagline {
+    font-size: 1rem;
+  }
+
+  form {
+    padding: 20px;
+  }
+
+  .form-title {
+    font-size: 28px;
+  }
+
+  .form-section-title {
+    font-size: 18px;
+  }
+
+  input,
+  select {
+    padding: 10px;
+  }
+
+  .submit-btn {
+    padding: 10px;
+  }
+}
