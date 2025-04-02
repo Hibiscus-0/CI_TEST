@@ -73,6 +73,12 @@
     margin: 30px 0px 0px 0px;
 }
 
+.menu-item.active {
+    background-color: #FCF5EE;
+    color: #1E2054;
+    opacity: 100%;
+}
+
 .menu-item:hover {
     background-color: #FCF5EE;
     color: #1E2054;

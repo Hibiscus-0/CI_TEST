@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.header-container {
+  height: 100px;
+  width: auto;
+  display: flex;
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  background-color: #fcdcd2;
+  border: 2px solid #1e2054;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.header-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+}
+
+.header-name h1 {
+  font-weight: 800;
+  color: #1e2054;
+}
+
+.notif-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: auto;
+  margin-left: auto;
+}
+
+.notif-icon {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+}

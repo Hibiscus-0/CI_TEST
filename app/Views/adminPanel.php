@@ -16,7 +16,7 @@
         </div>
 
         <div class="admin-content">
-            <h1>HAHAHHAHAHAA</h1>
+            <?= view('accountManager') ?>
         </div>
     </div>
 
