@@ -5,24 +5,32 @@
 
     <ul class="sidebar-menu">
         <li class="menu-item">
-            <img src="<?= base_url('public/images/accountManager.png') ?>" alt="Account Manager" class="menu-icon">
-            <span>Account Manager</span>
+            <a href="<?= base_url('admin') ?>" class="menu-link">
+                <img src="<?= base_url('public/images/accountManager.png') ?>" alt="Account Manager" class="menu-icon">
+                <span>Account Manager</span>
+            </a>
         </li>
         <li class="menu-item">
-            <img src="<?= base_url('public/images/analytics.png') ?>" alt="Analytics" class="menu-icon">
-            <span>Analytics</span>
+            <a href="<?= base_url('admin/analytics') ?>" class="menu-link">
+                <img src="<?= base_url('public/images/analytics.png') ?>" alt="Analytics" class="menu-icon">
+                <span>Analytics</span>
+            </a>
         </li>
         <li class="menu-item">
-            <img src="<?= base_url('public/images/dataRestore.png') ?>" alt="Data Restoration" class="menu-icon">
-            <span>Data Restoration</span>
+            <a href="<?= base_url('admin/dataRestoration') ?>" class="menu-link">
+                <img src="<?= base_url('public/images/dataRestore.png') ?>" alt="Data Restoration" class="menu-icon">
+                <span>Data Restoration</span>
+            </a>
         </li>
     </ul>
 
     <div class="logout-container">
         <ul class="sidebar-menu">
             <li class="menu-item logout">
-                <img src="<?= base_url('public/images/logout.png') ?>" alt="Logout" class="menu-icon">
-                <span>Logout</span>
+                <a href="<?= base_url('admin/logout') ?>" class="menu-link">
+                    <img src="<?= base_url('public/images/logout.png') ?>" alt="Logout" class="menu-icon">
+                    <span>Logout</span>
+                </a>
             </li>
         </ul>
     </div>
@@ -60,6 +68,10 @@
 }
 
 .menu-item {
+    margin: 30px 0px 0px 0px;
+}
+
+.menu-link {
     font-weight: 600;
     padding: 20px;
     cursor: pointer;
@@ -70,22 +82,23 @@
     font-size: 14px;
     color: #FCF5EE;
     opacity: 70%;
-    margin: 30px 0px 0px 0px;
+    text-decoration: none;
+    width: 100%;
 }
 
-.menu-item.active {
+.menu-link:active {
     background-color: #FCF5EE;
     color: #1E2054;
     opacity: 100%;
 }
 
-.menu-item:hover {
+.menu-link:hover {
     background-color: #FCF5EE;
     color: #1E2054;
     opacity: 100%;
 }
 
-.menu-item:hover .menu-icon {
+.menu-link:hover .menu-icon {
     filter: brightness(0) invert(0);
 }
 
@@ -98,12 +111,16 @@
 .menu-item.logout {
     margin-top: 0;
     border-top: 2px solid #FCF5EE;
+    padding-top: 0;
+}
+
+.menu-item.logout .menu-link {
     padding-top: 20px;
     color: #FCF5EE;
     border-bottom-right-radius: 2rem;
 }
 
-.menu-item.logout:hover {
+.menu-item.logout .menu-link:hover {
     color: #FCF5EE;
     background-color: #e74c3c;
     border-bottom-right-radius: 2rem;

@@ -12,11 +12,11 @@
 <body>
     <div class="main-container">
         <div class="sidebar-container">
-            <?= view('adminSidebar') ?>
+            <?= view('partials/adminSidebar') ?>
         </div>
 
         <div class="admin-content">
-            <?= view('accountManager') ?>
+            <?= $this->renderSection('content'); ?>
         </div>
     </div>
 
