@@ -7,7 +7,6 @@
 
 body {
   height: 100vh;
-  overflow: auto;
 }
 
 .main-container {
@@ -19,6 +18,7 @@ body {
   width: 100%;
   background-color: #fcf5ee;
   gap: 5px;
+  overflow: hidden;
 }
 
 .sidebar-container {

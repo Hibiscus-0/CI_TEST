@@ -1,5 +1,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="<?= base_url('public/styles/accountManager.css') ?>">
+<link rel="stylesheet" href="<?= base_url('node_modules/bootstrap-icons/font/bootstrap-icons.css') ?>">
 
 <div class="header-container">
     <div class="header-name">
@@ -41,13 +42,94 @@
 </div>
 
 <div class="main-table-container">
-    <div class="table-top">
-
-    </div>
     <div class="table-header">
-
+        <h1 class="table-title">Users</h1>
+        <div class="search-container">
+            <i class="bi bi-search search-icon"></i>
+            <input type="text" class="search-input" placeholder="Search Username...">
+        </div>
     </div>
-    <div class="table">
 
-    </div>
+    <table class="user-table">
+        <thead>
+            <tr>
+                <th>Username</th>
+                <th>Email</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>eronwew2</td>
+                <td>aaronvillamentol0@gmail.com</td>
+                <td><span class="status-badge active">ACTIVE</span></td>
+                <td>
+                    <button class="action-btn">
+                        <i class="bi bi-trash-fill"></i>
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>eronwew2</td>
+                <td>aaronvillamentol0@gmail.com</td>
+                <td><span class="status-badge inactive">INACTIVE</span></td>
+                <td>
+                    <button class="action-btn">
+                        <i class="bi bi-trash-fill"></i>
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>eronwew2</td>
+                <td>aaronvillamentol0@gmail.com</td>
+                <td><span class="status-badge inactive">INACTIVE</span></td>
+                <td>
+                    <button class="action-btn">
+                        <i class="bi bi-trash-fill"></i>
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>eronwew2</td>
+                <td>aaronvillamentol0@gmail.com</td>
+                <td><span class="status-badge inactive">INACTIVE</span></td>
+                <td>
+                    <button class="action-btn">
+                        <i class="bi bi-trash-fill"></i>
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>eronwew2</td>
+                <td>aaronvillamentol0@gmail.com</td>
+                <td><span class="status-badge inactive">INACTIVE</span></td>
+                <td>
+                    <button class="action-btn">
+                        <i class="bi bi-trash-fill"></i>
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>eronwew2</td>
+                <td>aaronvillamentol0@gmail.com</td>
+                <td><span class="status-badge inactive">INACTIVE</span></td>
+                <td>
+                    <button class="action-btn">
+                        <i class="bi bi-trash-fill"></i>
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>eronwew2</td>
+                <td>aaronvillamentol0@gmail.com</td>
+                <td><span class="status-badge inactive">INACTIVE</span></td>
+                <td>
+                    <button class="action-btn">
+                        <i class="bi bi-trash-fill"></i>
+                    </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 </div>
