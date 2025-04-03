@@ -1,11 +1,11 @@
 <?php 
     namespace App\Controllers;
 
-    class Login extends BaseController
+    class CreateAccount extends BaseController
     {
         public function index()
         {
-            return view('layout/login');
+            return view('layout/createAccount');
         }
     }
 ?>
