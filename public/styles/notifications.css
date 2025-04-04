@@ -1,0 +1,147 @@
+.notification-container {
+  position: fixed;
+  top: 80px;
+  right: 80px;
+  z-index: 10;
+}
+
+.notification-panel {
+  width: 400px;
+  height: 490px;
+  background: #fcf5ee;
+  border: 2px solid #1e2054;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.249);
+  display: none;
+}
+
+.notification-panel.show {
+  display: block;
+}
+
+.notification-header {
+  padding: 20px;
+  border-bottom: 2px solid #1e2054;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.notification-header h3 {
+  font-weight: 700;
+}
+
+.notification-list {
+  max-height: 400px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.notification-item {
+  display: flex;
+  align-items: center;
+  padding: 12px 15px;
+  border-bottom: 2px solid #bdbdbd;
+  position: relative;
+  height: 80px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.notification-item:hover {
+  background-color: #f0e6dd;
+}
+
+.notification-item:hover .notification-title {
+  color: #1e2054;
+}
+
+.notification-item:hover .notification-time {
+  color: #1e2054;
+}
+
+.notification-item:hover .bi-person-fill-add,
+.notification-item:hover .bi-trash-fill,
+.notification-item:hover .bi-ticket-detailed-fill {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.unread-badge {
+  position: absolute;
+  left: 8px;
+  top: 20%;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 12px;
+  background-color: #5faaff;
+  border-radius: 50%;
+}
+
+.notification-left {
+  flex: 1;
+  min-width: 0;
+  margin-left: 10px;
+}
+
+.notification-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+}
+
+.notification-title {
+  font-weight: 700;
+  margin-bottom: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.notification-time {
+  font-size: 12px;
+  color: #6c757d;
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
+
+.notification-item.unread .notification-title {
+  color: #1e2054;
+}
+
+.notification-item.unread .notification-time {
+  color: #636364;
+}
+
+.notification-item:not(.unread) .notification-title {
+  color: #6c757d;
+}
+
+.notification-item:not(.unread) .notification-time {
+  color: #a8a8a8;
+}
+
+.notification-item:not(.unread) .unread-badge {
+  display: none;
+}
+
+.bi-person-fill-add {
+  color: #5bdc6a;
+  font-size: 28px;
+  transition: transform 0.3s ease;
+}
+
+.bi2 {
+  color: #fe6f6f;
+  font-size: 28px;
+  transition: transform 0.3s ease;
+}
+
+.bi-ticket-detailed-fill {
+  color: #ece503;
+  font-size: 28px;
+  transition: transform 0.3s ease;
+}

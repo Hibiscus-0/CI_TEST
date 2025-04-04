@@ -41,6 +41,7 @@
   width: 42px;
   height: 42px;
   object-fit: contain;
+  cursor: pointer;
 }
 
 .main-card-container {

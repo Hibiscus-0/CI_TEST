@@ -6,6 +6,6 @@ class Home extends BaseController
 {
     public function index(): string
     {
-        return view('layout/recoverPass');
+        return view('layout/adminPanel');
     }
 }

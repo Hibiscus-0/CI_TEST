@@ -7,7 +7,6 @@
     <title>JotterPal</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="<?= base_url('public/styles/login.css') ?>">
-    <script src="<?= base_url('public/scripts/login.js') ?>"></script>
 </head>
 
 <body>
@@ -48,6 +47,8 @@
             </div>
         </div>
     </div>
+    <script src="<?= base_url('public/scripts/login.js') ?>"></script>
+
 </body>
 
 </html>

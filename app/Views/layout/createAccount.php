@@ -122,6 +122,8 @@
             </div>
         </div>
     </div>
+    <script src="<?= base_url('public/scripts/snackbar.js') ?>"></script>
+    <script src="<?= base_url('public/scripts/registerValidation.js') ?>"></script>
 </body>
 
 </html>

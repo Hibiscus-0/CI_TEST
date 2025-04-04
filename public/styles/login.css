@@ -166,7 +166,7 @@ body {
 
 .snackbar {
   visibility: hidden;
-  width: auto; /* Fixed width instead of percentage */
+  width: auto;
   max-height: auto;
   background-color: #e63946;
   color: white;
