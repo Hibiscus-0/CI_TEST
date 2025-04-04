@@ -1,68 +1,108 @@
-# CodeIgniter 4 Application Starter
+# Instructions for using this repo
+## Initial Setup (When you don't have the GitHub Repo yet)
+### Step 1: Clone the Repository
+```bash
+git clone repository-url
+```
+### Step 2: Check Available Branches
+```bash
+git branch -a # Displays all available branches
+```
+### Step 3: Swith to the Desired Branch
+- If the branch exists locally:
+  ```bash
+  git checkout branch-name # Moves to the desired branch
+  ```
+- If the branch only exists remotely:
+  ```bash
+  git checkout -b branch-name origin/branch-name # Create a local branch base on the remote branch
+  ```
+Now you can make changes to the project.
+## Implementing Featues, Fixing Bugs, and More
+Before implementing features, fixing bugs, or performing other tasks, **always create a dedicated branch** by following these steps:
+### Step 1: Move to the base branch
+- If the task is **frontend-related**, move to the frontend branch.
+- If the task is **backend-related**, move to the backend branch.
 
-## What is CodeIgniter?
+*(Refer to **Step 3** in the **Initial Setup** section for guidance.)*
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](https://codeigniter.com).
+>[!IMPORTANT]
+>PLEASE MAKE SURE THAT YOU HAVE DONE THIS STEP CORRECTLY TO MINIMIZE CONFLICTS
 
-This repository holds a composer-installable app starter.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
+### Step 2: Check if you are now in the right branch
+- Confirm you’re on the correct base branch by running:
+  ```bash
+  git status
+  ```
+- If you’re on the right branch, proceed to Step 3.
 
-More information about the plans for version 4 can be found in [CodeIgniter 4](https://forum.codeigniter.com/forumdisplay.php?fid=28) on the forums.
+### Step 3: Create a branch
+```bash
+git checkout -b branch name
+```
 
-You can read the [user guide](https://codeigniter.com/user_guide/)
-corresponding to the latest version of the framework.
+### Step 4: Check if you're in the branch that you have created
+```bash
+git status
+```
+>[!IMPORTANT]
+>For task branches, follow this format: "type"/"short-description"
+>Ex. If you’re implementing the login page frontend, name your branch: feature/login-frontend
 
-## Installation & updates
-
-`composer create-project codeigniter4/appstarter` then `composer update` whenever
-there is a new release of the framework.
-
-When updating, check the release notes to see if there are any changes you might need to apply
-to your `app` folder. The affected files can be copied or merged from
-`vendor/codeigniter4/framework/app`.
-
-## Setup
-
-Copy `env` to `.env` and tailor for your app, specifically the baseURL
-and any database settings.
-
-## Important Change with index.php
-
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
-
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
-
-**Please** read the user guide for a better explanation of how CI4 works!
-
-## Repository Management
-
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
-
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
-
-## Server Requirements
-
-PHP version 8.1 or higher is required, with the following extensions installed:
-
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
-
+## Saving & Uploading Your Changes
+### Step 1: Verify Current Branch
+```bash
+git status  # To check if you're on the correct branch
+```
+### Step 2: Stage Your Changes
+```bash
+git add .  # Stages all changes (or specify files instead of `.`)
+```
+### Step 3: Commit Your Changes
+- Short commit message:
+  ```bash
+  git commit -m "Your commit message"
+  ```
+- Long commit message (opens default editor):
+  ```bash
+  git commit
+  ```
+### Step 4: Push to Remote Repository
+```bash
+git push origin branch-name
+```
+### Step 5: Create a Pull Request (PR) on GitHub
+1. Go to the repository on GitHub.
+2. Click "Pull Requests" → "New Pull Request".
+3. Set:
+   - Base branch: The branch you want to merge into (e.g., main, frontend).
+   - Compare branch: Your pushed branch.
+4. Click "Create Pull Request", add a title & description, then submit.
+5. Resolve conflicts (if any) before merging.
+6. delete the branch after merging if not base branch.
+### Step 6: Delete the branch locally
+Move to base branch first (ex. Frontend)
+```bash
+git branch -d branch name
+```
 > [!WARNING]
-> - The end of life date for PHP 7.4 was November 28, 2022.
-> - The end of life date for PHP 8.0 was November 26, 2023.
-> - If you are still using PHP 7.4 or 8.0, you should upgrade immediately.
-> - The end of life date for PHP 8.1 will be December 31, 2025.
+> If You're Creating a PR to merge base branch to another DO NOT DELETE THE BRANCH AFTER MERGING
 
-Additionally, make sure that the following extensions are enabled in your PHP:
+## Pulling Updates from Remote
+### Step 1: Fetch Latest Changes
+```bash
+git fetch --all
+```
+### Step 2: Ensure You're on the Correct Branch
+```bash
+git status  # Check current branch
+```
+- If not on the right branch:
+  ```bash
+  git checkout branch-name
+  ```
+### Step 3: Pull Remote Changes
+```bash
+git pull  # Updates your local branch with remote changes
+```
 
-- json (enabled by default - don't turn it off)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
