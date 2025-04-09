@@ -23,9 +23,10 @@
   width: auto;
 }
 
-.header-name h1 {
+.header-name h2 {
   font-weight: 800;
   color: #1e2054;
+  margin-bottom: 0;
 }
 
 .notif-container {
@@ -42,4 +43,96 @@
   height: 42px;
   object-fit: contain;
   cursor: pointer;
+}
+
+.data-main-container {
+  width: 100%;
+  height: calc(100% - 100px);
+  margin-top: 10px;
+  overflow: auto;
+}
+
+.data-main-container::-webkit-scrollbar {
+  width: 12px;
+}
+
+.data-main-container::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  border-radius: 5px;
+}
+
+.data-main-container::-webkit-scrollbar-thumb {
+  background-color: #1e2054;
+  border-radius: 5px;
+  border: 2px solid #f0f0f0;
+}
+
+.data-main-container::-webkit-scrollbar-thumb:hover {
+  background-color: #353874;
+}
+
+.stats-requests-container {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  gap: 10px;
+}
+
+.deleted-stats-container {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.restore-requests-container {
+  width: 70%;
+  height: 100%;
+  background-color: #fcdcd2;
+  border: 2px solid #1e2054;
+  border-radius: 10px;
+  padding: 10px 22px 10px 22px;
+}
+
+.deletedTable-container {
+  height: 60%;
+  width: 100%;
+  background-color: bisque;
+  margin-top: 10px;
+  border: 2px solid #1e2054;
+  border-radius: 10px;
+}
+
+.deleted-stat-card {
+  width: 100%;
+  height: 110px;
+  background-color: #1e2054;
+  padding: 10px 16px 10px 16px;
+  border-radius: 8px;
+}
+
+.stat-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.stat-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fcf5ee;
+  margin: 0;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+}
+
+.stat-value {
+  margin-top: 10px;
+  font-size: 28px;
+  font-weight: 700;
+  color: #fcf5ee;
 }

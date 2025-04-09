@@ -6,7 +6,7 @@
 
 <div class="header-container">
     <div class="header-name">
-        <h1>Hello, ADMIN</h1>
+        <h2>Hello, ADMIN</h2>
     </div>
     <div class="notif-container position-relative">
         <img src="<?= base_url('public/images/notifications.png') ?>" alt="Notifications" class="notif-icon"
