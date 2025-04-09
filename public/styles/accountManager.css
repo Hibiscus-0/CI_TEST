@@ -23,9 +23,10 @@
   width: auto;
 }
 
-.header-name h1 {
+.header-name h2 {
   font-weight: 800;
   color: #1e2054;
+  margin-bottom: 0;
 }
 
 .notif-container {
@@ -104,9 +105,28 @@
   border: 2px solid #1e2054;
   width: 100%;
   overflow: auto;
-  height: 50%;
+  height: calc(100% - 330px);
   display: flex;
   flex-direction: column;
+}
+
+.main-table-container::-webkit-scrollbar {
+  width: 12px;
+}
+
+.main-table-container::-webkit-scrollbar-track {
+  background: #fcdcd2;
+  border-radius: 10px;
+}
+
+.main-table-container::-webkit-scrollbar-thumb {
+  background-color: #1e2054;
+  border-radius: 10px;
+  border: 2px solid #f0f0f0;
+}
+
+.main-table-container::-webkit-scrollbar-thumb:hover {
+  background-color: #353874;
 }
 
 .table-header {
@@ -120,6 +140,7 @@
   color: #1e2054;
   margin: 0;
   font-size: 26px;
+  font-weight: 800;
 }
 
 .search-container {

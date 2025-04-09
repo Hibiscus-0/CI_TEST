@@ -37,6 +37,25 @@
   overflow-x: hidden;
 }
 
+.notification-list::-webkit-scrollbar {
+  width: 10px;
+}
+
+.notification-list::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  border-radius: 5px;
+}
+
+.notification-list::-webkit-scrollbar-thumb {
+  background-color: #1e2054;
+  border-radius: 5px;
+  border: 2px solid #f0f0f0;
+}
+
+.notification-list::-webkit-scrollbar-thumb:hover {
+  background-color: #353874;
+}
+
 .notification-item {
   display: flex;
   align-items: center;
