@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.header-container {
+  height: 100px;
+  width: auto;
+  display: flex;
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  background-color: #fcdcd2;
+  border: 2px solid #1e2054;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.header-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+}
+
+.header-name h2 {
+  font-weight: 800;
+  color: #1e2054;
+  margin-bottom: 0;
+}
+
+.notif-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: auto;
+  margin-left: auto;
+}
+
+.notif-icon {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.home-main-container {
+  width: 100%;
+  height: calc(100% - 120px);
+  margin-top: 20px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.top-section {
+  width: 100%;
+  height: 35%;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.5fr;
+  gap: 10px;
+}
+
+.all-notes,
+.deleted-notes {
+  background: #1e2054;
+  border-radius: 8px;
+  padding: 20px;
+  min-height: 100%;
+  color: white;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.note-header {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 24px;
+  gap: 10px;
+}
+
+.note-header i {
+  font-size: 29px;
+}
+
+.note-header span {
+  margin-left: 5px;
+}
+
+.note-count {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.arrow-box {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  border: 3px solid #fcf5ee;
+  border-radius: 10px;
+  padding: 5px 10px;
+  font-size: 1rem;
+  color: #fcf5ee;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.arrow-box:hover {
+  background-color: #fcf5ee;
+  color: #1e2054;
+  transform: scale(1.1);
+}
+
+.submit-ticket-container {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 15px;
+  min-height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #1e2054;
+  border-radius: 10px;
+  padding: 20px 30px;
+  color: #0b0d4d;
+}
+
+.ticket-left h2 {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.submit-btn {
+  background-color: #1e2054;
+  color: white;
+  font-weight: 700;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-btn:hover {
+  background-color: #1a1c77;
+  transform: scale(1.03);
+}
+
+.submit-btn i {
+  color: #b4f314;
+  font-size: 20px;
+}
+
+.ticket-right {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.clipboard-icon {
+  width: 140px;
+  height: auto;
+}
+
+.reminder-container {
+  width: 100%;
+  height: 60%;
+  border: 2px solid #1a1c77;
+  margin-top: 20px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  border-radius: 10px;
+  padding: 30px;
+  background: #fcdcd2;
+}
+
+.reminder-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.reminder-header h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1e2054;
+  margin: 0;
+}
+
+.filter-select {
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 2px solid #1e2054;
+  background-color: #fff;
+  font-weight: 700;
+  color: #1e2054;
+  cursor: pointer;
+  width: 150px;
+}
+
+.reminder-card {
+  background-color: #fcf5ee;
+  border: 1px solid #1e2054;
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reminder-info {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+}
+
+.reminder-title {
+  font-weight: 700;
+  font-size: 16px;
+  color: #1e2054;
+}
+
+.reminder-description {
+  font-size: 12px;
+  color: #5c5c5c;
+  font-weight: 700;
+}
+
+.reminder-meta {
+  display: flex;
+  gap: 200px;
+  color: #5c5c5c;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.dots-menu {
+  font-size: 20px;
+  color: #1e2054;
+  cursor: pointer;
+}

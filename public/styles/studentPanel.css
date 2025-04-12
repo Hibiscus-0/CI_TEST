@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+}
+
+.main-container {
+  display: flex;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #fcf5ee;
+  gap: 5px;
+  overflow: hidden;
+}
+
+.sidebar-container {
+  flex: 0 0 250px;
+  width: auto;
+  margin-right: 10px;
+}
+
+.student-content {
+  flex: 1;
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+}
