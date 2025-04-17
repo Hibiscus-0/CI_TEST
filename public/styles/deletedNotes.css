@@ -45,7 +45,7 @@
   cursor: pointer;
 }
 
-.top-header-content {
+.top-header-container {
   margin-top: 10px;
   background-color: #1e2054;
   padding: 10px 20px;
@@ -68,19 +68,11 @@
   cursor: pointer;
 }
 
-.notes-title {
-  color: #fcf5ee;
-  font-family: "Poppins", sans-serif;
+.header {
   font-weight: 700;
-  font-size: 28px;
+  color: #fcf5ee;
   margin: 0;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.dropdown-icon {
-  font-size: 16px;
+  font-size: 30px;
 }
 
 .right-side {
@@ -119,85 +111,79 @@
   pointer-events: none;
 }
 
-.allNotes-container {
+.deleteBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 20px;
+  margin-right: 20px;
+  background-color: #ff4444;
+  color: #fcf5ee;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.deleteBtn:hover {
+  background-color: #cc0000;
+}
+
+.deleteBtn p {
+  margin: 0;
+}
+
+.delete-icon {
+  font-size: 14px;
+}
+
+.reminder-header {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0px 0px 0px;
+}
+
+.reminder-header p {
+  font-weight: 700;
+  font-size: 16px;
+  color: #1e2054;
+  margin: 0;
+}
+
+.deletedNotes-container {
   padding-top: 10px;
   width: 100%;
-  height: calc(100vh - 220px);
+  height: calc(100vh - 250px);
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  justify-content: space-between;
   overflow-y: auto;
   overflow-x: hidden;
 }
 
-.allNotes-container::-webkit-scrollbar {
+.deletedNotes-container::-webkit-scrollbar {
   width: 10px;
 }
 
-.allNotes-container::-webkit-scrollbar-track {
+.deletedNotes-container::-webkit-scrollbar-track {
   background: #f0f0f0;
   border-radius: 5px;
 }
 
-.allNotes-container::-webkit-scrollbar-thumb {
+.deletedNotes-container::-webkit-scrollbar-thumb {
   background-color: #1e2054;
   border-radius: 5px;
   border: 2px solid #f0f0f0;
 }
 
-.allNotes-container::-webkit-scrollbar-thumb:hover {
+.deletedNotes-container::-webkit-scrollbar-thumb:hover {
   background-color: #353874;
 }
 
-.notes-dropdown {
-  display: flex;
-  align-items: center;
-}
-
-.custom-dropdown-btn {
-  background-color: transparent;
-  border: none;
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-size: 28px;
-  color: #fcf5ee;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 0;
-}
-
-.custom-dropdown-menu {
-  background-color: #1e2054 !important;
-  border-radius: 10px;
-  padding: 10px 0;
-}
-
-.custom-dropdown-menu .dropdown-item {
-  font-size: 16px;
-  font-weight: 700;
-  color: #fcf5ee;
-  background-color: #1e2054;
-  padding: 10px 16px;
-}
-
-.dropdown-item:hover {
-  color: #1e2054;
-}
-
-.custom-dropdown-item:active,
-.custom-dropdown-item:focus {
-  background-color: #1e2054 !important;
-  color: #fcf5ee;
-  font-weight: 700;
-}
-
-.dropdown-toggle::after {
-  display: none !important;
-}
-
-.note-card {
+.deleted-card {
   width: 295px;
   height: 230px;
   background-color: #fffbf6;
@@ -213,13 +199,14 @@
   cursor: pointer;
 }
 
-.note-card:hover {
+.deleted-card:hover {
   transform: translateY(-5px);
 }
 
-.note-card-header {
+.deleted-card-header {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .pin-icon {
@@ -227,26 +214,32 @@
   font-size: 24px;
 }
 
-.delete-icon {
-  color: #d11a2a;
+.delete-icon2 {
+  color: #c63739;
   font-size: 24px;
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
 
-.note-card-body .note-title {
+.delete-icon2:hover {
+  transform: scale(1.15);
+  color: #991d29;
+}
+
+.deleted-card-body .deleted-title {
   font-size: 24px;
   font-weight: 800;
   color: #1e2054;
   margin: 8px 0 10px;
 }
 
-.note-card-body .note-content {
+.deleted-card-body .deleted-content {
   font-size: 13px;
   color: #1e2054;
   font-weight: 400;
 }
 
-.note-card-footer {
+.deleted-card-footer {
   display: flex;
   justify-content: flex-end;
 }
