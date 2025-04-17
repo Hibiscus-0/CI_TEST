@@ -18,7 +18,7 @@
         </div>
 
         <div class="student-content">
-            <?= view('partials/allNotes') ?>
+            <?= view('partials/deletedNotes') ?>
         </div>
 
         <?= view('partials/notification_panel') ?>
