@@ -16,11 +16,9 @@
         <div class="sidebar-container">
             <?= view('partials/studentSidebar') ?>
         </div>
-
         <div class="student-content">
-            <?= view('partials/tasks') ?>
+            <?= view('partials/notes-folder') ?>
         </div>
-
         <?= view('partials/notification_panel') ?>
     </div>
     <script src="<?= base_url('public/scripts/notifications.js') ?>"></script>

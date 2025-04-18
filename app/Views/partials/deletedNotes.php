@@ -20,7 +20,7 @@
 <div class="deletedNotes-mainWrapper">
     <div class="top-header-container">
         <div class="left-side">
-            <i class="bi bi-arrow-left back-icon"></i>
+            <i class="bi bi-arrow-left-short back-icon"></i>
             <h2 class="header">DELETED NOTES</h2>
         </div>
         <div class="right-side">
@@ -44,10 +44,6 @@
             </div>
             <div class="deleted-card-body">
                 <h5 class="deleted-title">Title</h5>
-                <p class="deleted-content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua.
-                </p>
             </div>
             <div class="deleted-card-footer">
                 <i class="bi bi-lock-fill lock-icon"></i>
@@ -65,67 +61,7 @@
                 </p>
             </div>
             <div class="deleted-card-footer">
-                <i class="bi bi-lock-fill lock-icon"></i>
-            </div>
-        </div>
-        <div class="deleted-card">
-            <div class="deleted-card-header">
-                <i class="bi bi-trash-fill delete-icon2"></i>
-            </div>
-            <div class="deleted-card-body">
-                <h5 class="deleted-title">Title</h5>
-                <p class="deleted-content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua.
-                </p>
-            </div>
-            <div class="deleted-card-footer">
-                <i class="bi bi-lock-fill lock-icon"></i>
-            </div>
-        </div>
-        <div class="deleted-card">
-            <div class="deleted-card-header">
-                <i class="bi bi-trash-fill delete-icon2"></i>
-            </div>
-            <div class="deleted-card-body">
-                <h5 class="deleted-title">Title</h5>
-                <p class="deleted-content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua.
-                </p>
-            </div>
-            <div class="deleted-card-footer">
-                <i class="bi bi-lock-fill lock-icon"></i>
-            </div>
-        </div>
-        <div class="deleted-card">
-            <div class="deleted-card-header">
-                <i class="bi bi-trash-fill delete-icon2"></i>
-            </div>
-            <div class="deleted-card-body">
-                <h5 class="deleted-title">Title</h5>
-                <p class="deleted-content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua.
-                </p>
-            </div>
-            <div class="deleted-card-footer">
-                <i class="bi bi-lock-fill lock-icon"></i>
-            </div>
-        </div>
-        <div class="deleted-card">
-            <div class="deleted-card-header">
-                <i class="bi bi-trash-fill delete-icon2"></i>
-            </div>
-            <div class="deleted-card-body">
-                <h5 class="deleted-title">Title</h5>
-                <p class="deleted-content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua.
-                </p>
-            </div>
-            <div class="deleted-card-footer">
-                <i class="bi bi-lock-fill lock-icon"></i>
+
             </div>
         </div>
     </div>

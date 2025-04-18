@@ -48,10 +48,6 @@
             </div>
             <div class="note-card-body">
                 <h5 class="note-title">Title</h5>
-                <p class="note-content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua.
-                </p>
             </div>
             <div class="note-card-footer">
                 <i class="bi bi-lock-fill lock-icon"></i>
@@ -70,7 +66,7 @@
                 </p>
             </div>
             <div class="note-card-footer">
-                <i class="bi bi-lock-fill lock-icon"></i>
+
             </div>
         </div>
         <div class="note-card">
@@ -80,10 +76,6 @@
             </div>
             <div class="note-card-body">
                 <h5 class="note-title">Title</h5>
-                <p class="note-content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua.
-                </p>
             </div>
             <div class="note-card-footer">
                 <i class="bi bi-lock-fill lock-icon"></i>
@@ -102,7 +94,6 @@
                 </p>
             </div>
             <div class="note-card-footer">
-                <i class="bi bi-lock-fill lock-icon"></i>
             </div>
         </div>
         <div class="note-card">
@@ -118,71 +109,7 @@
                 </p>
             </div>
             <div class="note-card-footer">
-                <i class="bi bi-lock-fill lock-icon"></i>
-            </div>
-        </div>
-        <div class="note-card">
-            <div class="note-card-header">
-                <i class="bi bi-pin-angle-fill pin-icon"></i>
-                <i class="bi bi-trash-fill delete-icon"></i>
-            </div>
-            <div class="note-card-body">
-                <h5 class="note-title">Title</h5>
-                <p class="note-content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua.
-                </p>
-            </div>
-            <div class="note-card-footer">
-                <i class="bi bi-lock-fill lock-icon"></i>
-            </div>
-        </div>
-        <div class="note-card">
-            <div class="note-card-header">
-                <i class="bi bi-pin-angle-fill pin-icon"></i>
-                <i class="bi bi-trash-fill delete-icon"></i>
-            </div>
-            <div class="note-card-body">
-                <h5 class="note-title">Title</h5>
-                <p class="note-content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua.
-                </p>
-            </div>
-            <div class="note-card-footer">
-                <i class="bi bi-lock-fill lock-icon"></i>
-            </div>
-        </div>
-        <div class="note-card">
-            <div class="note-card-header">
-                <i class="bi bi-pin-angle-fill pin-icon"></i>
-                <i class="bi bi-trash-fill delete-icon"></i>
-            </div>
-            <div class="note-card-body">
-                <h5 class="note-title">Title</h5>
-                <p class="note-content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua.
-                </p>
-            </div>
-            <div class="note-card-footer">
-                <i class="bi bi-lock-fill lock-icon"></i>
-            </div>
-        </div>
-        <div class="note-card">
-            <div class="note-card-header">
-                <i class="bi bi-pin-angle-fill pin-icon"></i>
-                <i class="bi bi-trash-fill delete-icon"></i>
-            </div>
-            <div class="note-card-body">
-                <h5 class="note-title">Title</h5>
-                <p class="note-content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua.
-                </p>
-            </div>
-            <div class="note-card-footer">
-                <i class="bi bi-lock-fill lock-icon"></i>
+
             </div>
         </div>
     </div>
