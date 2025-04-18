@@ -59,13 +59,7 @@
 .left-side {
   display: flex;
   align-items: center;
-  gap: 20px;
-}
-
-.back-icon {
-  color: #fcf5ee;
-  font-size: 30px;
-  cursor: pointer;
+  margin-left: 10px;
 }
 
 .header {
@@ -111,144 +105,84 @@
   pointer-events: none;
 }
 
-.deleteBtn {
+.addFolderBtn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
   padding: 10px 20px;
   margin-right: 20px;
-  background-color: #ff4444;
-  color: #fcf5ee;
+  background-color: #fcdcd2;
   border: none;
   border-radius: 8px;
-  font-weight: 700;
-  font-size: 14px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
-.deleteBtn:hover {
-  background-color: #cc0000;
+.addFolderBtn:hover {
+  background-color: #ffb9a4;
 }
 
-.deleteBtn p {
+.addFolderBtn p {
   margin: 0;
+  font-weight: 800;
+  font-size: 14px;
+  color: #1e2054;
 }
 
-.delete-icon {
+.addFolderBtn {
   font-size: 14px;
 }
 
-.reminder-header {
-  display: flex;
-  justify-content: center;
-  margin: 10px 0px 0px 0px;
-}
-
-.reminder-header p {
-  font-weight: 700;
-  font-size: 16px;
-  color: #1e2054;
-  margin: 0;
-}
-
-.deletedNotes-container {
+.folders-container {
   padding-top: 10px;
   width: 100%;
-  height: calc(100vh - 250px);
+  height: calc(100vh - 230px);
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  justify-content: flex-start;
   overflow-y: auto;
-  overflow-x: hidden;
 }
 
-.deletedNotes-container::-webkit-scrollbar {
-  width: 10px;
-}
-
-.deletedNotes-container::-webkit-scrollbar-track {
-  background: #f0f0f0;
-  border-radius: 5px;
-}
-
-.deletedNotes-container::-webkit-scrollbar-thumb {
-  background-color: #1e2054;
-  border-radius: 5px;
-  border: 2px solid #f0f0f0;
-}
-
-.deletedNotes-container::-webkit-scrollbar-thumb:hover {
-  background-color: #353874;
-}
-
-.deleted-card {
-  width: 295px;
-  height: 230px;
+.folder-item {
   background-color: #fffbf6;
-  border-radius: 10px;
   border: 2px solid #1e2054;
-  padding: 16px;
-  transition: transform 0.2s ease;
-  box-sizing: border-box;
+  border-radius: 10px;
+  width: 230px;
+  height: 170px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
   position: relative;
+  transition: all 0.2s ease-in-out;
   cursor: pointer;
+  margin: 0;
 }
 
-.deleted-card:hover {
+.folder-item:hover {
   transform: translateY(-5px);
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.479);
 }
 
-.deleted-card-header {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.pin-icon {
+.folder-icon {
+  font-size: 50px;
   color: #1e2054;
-  font-size: 24px;
+  margin-bottom: 10px;
 }
 
-.delete-icon2 {
-  color: #c63739;
-  font-size: 24px;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-}
-
-.delete-icon2:hover {
-  transform: scale(1.15);
-  color: #991d29;
-}
-
-.deleted-title {
-  font-size: 24px;
-  font-weight: 800;
-  color: #1e2054;
-  margin: 8px 0 10px;
-}
-
-.deleted-content {
-  font-size: 13px;
-  color: #1e2054;
+.folder-name {
   font-weight: 700;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-
-.deleted-card-footer {
-  display: flex;
-  justify-content: flex-end;
+  color: #1e2054;
+  text-align: center;
 }
 
 .lock-icon {
+  font-size: 15px;
+
+  position: absolute;
+  top: 10px;
+  right: 10px;
   color: #1e2054;
-  font-size: 18px;
 }

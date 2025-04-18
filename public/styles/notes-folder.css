@@ -45,7 +45,7 @@
   cursor: pointer;
 }
 
-.top-header-content {
+.top-header-container {
   margin-top: 10px;
   background-color: #1e2054;
   padding: 10px 20px;
@@ -68,19 +68,16 @@
   cursor: pointer;
 }
 
-.notes-title {
+.lock-icon {
   color: #fcf5ee;
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-size: 28px;
-  margin: 0;
-  display: flex;
-  align-items: center;
-  gap: 20px;
+  font-size: 20px;
 }
 
-.dropdown-icon {
-  font-size: 16px;
+.header {
+  font-weight: 700;
+  color: #fcf5ee;
+  margin: 0;
+  font-size: 30px;
 }
 
 .right-side {
@@ -119,113 +116,107 @@
   pointer-events: none;
 }
 
-.allNotes-container {
+.addNoteBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 20px;
+  margin-right: 20px;
+  background-color: #fcdcd2;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.addNoteBtn:hover {
+  background-color: #ffb9a4;
+}
+
+.addNoteBtn p {
+  margin: 0;
+  font-weight: 800;
+  font-size: 14px;
+  color: #1e2054;
+}
+
+.addNoteBtn {
+  font-size: 14px;
+}
+
+.dots-icon {
+  color: #fcf5ee;
+  font-size: 28px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.dots-icon:hover {
+  transform: scale(1.1);
+}
+
+.notes-container {
   padding-top: 10px;
   width: 100%;
   height: calc(100vh - 220px);
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  justify-content: space-between;
+  justify-content: flex-start;
   overflow-y: auto;
-  overflow-x: hidden;
 }
 
-.allNotes-container::-webkit-scrollbar {
+.notes-container::-webkit-scrollbar {
   width: 10px;
 }
 
-.allNotes-container::-webkit-scrollbar-track {
+.notes-container::-webkit-scrollbar-track {
   background: #f0f0f0;
   border-radius: 5px;
 }
 
-.allNotes-container::-webkit-scrollbar-thumb {
+.notes-container::-webkit-scrollbar-thumb {
   background-color: #1e2054;
   border-radius: 5px;
   border: 2px solid #f0f0f0;
 }
 
-.allNotes-container::-webkit-scrollbar-thumb:hover {
+.notes-container::-webkit-scrollbar-thumb:hover {
   background-color: #353874;
 }
 
-.notes-dropdown {
-  display: flex;
-  align-items: center;
-}
-
-.custom-dropdown-btn {
-  background-color: transparent;
-  border: none;
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-size: 28px;
-  color: #fcf5ee;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 0;
-}
-
-.custom-dropdown-menu {
-  background-color: #1e2054 !important;
-  border-radius: 10px;
-  padding: 10px 0;
-}
-
-.custom-dropdown-menu .dropdown-item {
-  font-size: 16px;
-  font-weight: 700;
-  color: #fcf5ee;
-  background-color: #1e2054;
-  padding: 10px 16px;
-}
-
-.dropdown-item:hover {
-  color: #1e2054;
-}
-
-.custom-dropdown-item:active,
-.custom-dropdown-item:focus {
-  background-color: #1e2054 !important;
-  color: #fcf5ee;
-  font-weight: 700;
-}
-
-.dropdown-toggle::after {
-  display: none !important;
-}
-
-.note-card {
-  width: 295px;
-  height: 230px;
+.note-item {
   background-color: #fffbf6;
-  border-radius: 10px;
   border: 2px solid #1e2054;
-  padding: 16px;
-  transition: transform 0.2s ease;
-  box-sizing: border-box;
+  border-left: 8px solid #28a745;
+  border-radius: 10px;
+  padding: 15px;
+  width: 330px;
+  height: 250px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  position: relative;
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
 
-.note-card:hover {
+.note-item:hover {
   transform: translateY(-5px);
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.479);
 }
 
-.note-card-header {
+.note-header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
 .pin-icon {
   color: #1e2054;
-  font-size: 24px;
+  font-size: 22px;
+  cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
 
@@ -234,8 +225,8 @@
 }
 
 .delete-icon {
-  color: #d11a2a;
-  font-size: 24px;
+  color: #ff4444;
+  font-size: 22px;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
@@ -245,31 +236,43 @@
   color: #991d29;
 }
 
+.note-body {
+  margin-bottom: 15px;
+}
+
 .note-title {
-  font-size: 24px;
+  font-size: 26px;
   font-weight: 800;
   color: #1e2054;
-  margin: 8px 0 10px;
+  margin-bottom: 5px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
 
 .note-content {
-  font-size: 13px;
   color: #1e2054;
+  font-size: 14px;
+  line-height: 1.5;
   font-weight: 700;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
 
-.note-card-footer {
+.note-footer {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .lock-icon {
-  color: #1e2054;
   font-size: 18px;
+  color: #1e2054;
+}
+
+.note-date {
+  font-size: 12px;
+  color: #696a7a;
+  font-weight: 700;
 }

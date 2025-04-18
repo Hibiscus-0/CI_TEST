@@ -6,25 +6,25 @@
     <ul class="sidebar-menu">
         <li class="menu-item">
             <a href="<?= base_url('student') ?>" class="menu-link">
-                <img src="<?= base_url('public/images/accountManager.png') ?>" alt="Account Manager" class="menu-icon">
+                <i class="bi bi-house-door-fill menu-icon"></i>
                 <span>Home</span>
             </a>
         </li>
         <li class="menu-item">
             <a href="<?= base_url('student/tasks') ?>" class="menu-link">
-                <img src="<?= base_url('public/images/analytics.png') ?>" alt="Analytics" class="menu-icon">
+                <i class="bi bi-clipboard2-check-fill menu-icon"></i>
                 <span>Tasks</span>
             </a>
         </li>
         <li class="menu-item">
             <a href="<?= base_url('student/notes') ?>" class="menu-link">
-                <img src="<?= base_url('public/images/dataRestore.png') ?>" alt="Data Restoration" class="menu-icon">
+                <i class="bi bi-stickies-fill menu-icon"></i>
                 <span>Notes</span>
             </a>
         </li>
         <li class="menu-item">
             <a href="<?= base_url('student/profile') ?>" class="menu-link">
-                <img src="<?= base_url('public/images/dataRestore.png') ?>" alt="Data Restoration" class="menu-icon">
+                <i class="bi bi-person-fill menu-icon"></i>
                 <span>Profile</span>
             </a>
         </li>
@@ -135,6 +135,7 @@
 .menu-icon {
     width: 20px;
     height: 20px;
+    font-size: 16px;
     object-fit: contain;
     transition: all 0.3s ease;
 }
